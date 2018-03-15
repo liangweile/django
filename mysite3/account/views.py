@@ -23,7 +23,7 @@ def register(request):
             email = uf.cleaned_data['email']
 
             user = User()
-            user.usrname = username
+            user.username = username
             user.password = password
             user.email = email
             user.save()
